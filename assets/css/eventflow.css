@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Utility
@@ -10358,4 +10358,55 @@ ul {
   to {
       transform: translateX(-100%);
   }
+}
+
+
+
+
+
+
+.ticker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #690B99;
+  color: white;
+  padding: 6px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.ticker-wrapper {
+  display: flex;
+  width: max-content;
+  animation: ticker-animation 25s linear infinite;
+}
+
+@keyframes ticker-animation {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+.jo-blog-comment-form button i {
+  font-size: 22px;
+  padding-top: 3px;
+}
+
+.ticker-item {
+  color: var(--ttRed);
+  height: clamp(45px, 2.94vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 clamp(18px, 1.26vw, 24px);
+  border-radius: 6px;
+  gap: 8px;
+  color: var(--white);
+  margin-top: clamp(15px, 1.58vw, 30px);
 }
